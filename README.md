@@ -7,7 +7,7 @@
 <li>4. Setup database conntection & immigration (buggy)</li>
 <li>5. Seprated the code into app/Core + app/Modules</li>
 <li>6. Setup basic Routing & navigation </li>
-
+<li>7. Fixed bugs with database connection & made api directories </li>
 <hr />
 <p> <b> 19/5/2023 </b> </p>
 <li>1. Understand Requirements</li>
