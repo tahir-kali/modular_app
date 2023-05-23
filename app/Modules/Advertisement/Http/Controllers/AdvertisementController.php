@@ -3,47 +3,18 @@
 namespace Modules\Advertisement\Http\Controllers;
 
 use Illuminate\Contracts\Support\Renderable;
-use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Modules\Advertisement\Entities\Advertisement;
 
 class AdvertisementController extends Controller
 {
 
     public function index(): Renderable
     {
-        return view('index');
+        return view('advertisement');
     }
-
-
-
-    public function create(): Renderable
+    public function store(Advertisement $advertisement): bool|string
     {
-        return view('advertisement::create');
-    }
-
-    public function store(Request $request)
-    {
-        //
-    }
-
-
-    public function show($id)
-    {
-        return view('advertisement::show');
-    }
-
-    public function edit($id)
-    {
-        return view('advertisement::edit');
-    }
-
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    public function destroy($id)
-    {
-        //
+        return json_encode(["msg"=>"Success!","ad"=>$advertisement]);
     }
 }
