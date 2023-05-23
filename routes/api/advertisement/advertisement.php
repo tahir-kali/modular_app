@@ -1,8 +1,8 @@
 <?php
 
 
+use App\Core\Http\Controllers\Advertisement\AdvertisementController;
 use Illuminate\Support\Facades\Route;
-use Modules\Advertisement\Http\Controllers\AdvertisementController;
 
 Route::group([
     'prefix'     => 'advertisement',
@@ -11,5 +11,6 @@ Route::group([
 ], function () {
 
     Route::post('/store', [AdvertisementController::class,'store']);
+    Route::get('/', [AdvertisementController::class,'show']);
 
 });

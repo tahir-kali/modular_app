@@ -1,13 +1,4 @@
-<h1> Progress Report </h1>
-<hr />
-<p> <b> 22/5/2023 </b> </p>
-<li>1. Broke the solution into small pieces to understand the architecture better </li>
-<li>2. Made evernote notes & gathered the neccessary information for the task </li>
-<li>3. Reviewed my solution</li>
-<li>4. Setup database conntection & immigration (buggy)</li>
-<li>5. Seprated the code into app/Core + app/Modules</li>
-<li>6. Setup basic Routing & navigation </li>
-<li>7. Fixed bugs with database connection & made api directories </li>
-<hr />
-<p> <b> 19/5/2023 </b> </p>
-<li>1. Understand Requirements</li>
+<code>composer install</code>
+<code>composer dump-autoload</code>
+<code>php artisan migrate --path=Modules\{module_name}\Database\Migrations</code>
+<code>php artisan seed --path=Modules\{module_name}\Database\Seeds</code>
