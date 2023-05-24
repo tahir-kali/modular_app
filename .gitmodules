@@ -1,0 +1,6 @@
+[submodule "Modules/advertisement"]
+	path = Modules/advertisement
+	url = https://github.com/tahir-kali/advertisement.git
+[submodule "Modules/Advertisement"]
+	path = Modules/Advertisement
+	url = https://github.com/tahir-kali/advertisement.git

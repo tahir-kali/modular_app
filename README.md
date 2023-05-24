@@ -1,4 +1,2 @@
-<code>composer install</code>
-<code>composer dump-autoload</code>
-<code>php artisan migrate --path=Modules\{module_name}\Database\Migrations</code>
-<code>php artisan seed --path=Modules\{module_name}\Database\Seeds</code>
+<h1>To add a sub module use the following command:</h1>
+<code>git submodule add https://github.com/tahir-kali/advertisement.git app/Modules/advertisement</code>

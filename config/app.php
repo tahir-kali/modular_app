@@ -1,6 +1,6 @@
 <?php
 
-use App\Core\Providers\ModulesMigrationServiceProvider;
+use App\Providers\ModulesMigrationServiceProvider;
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
 
@@ -164,12 +164,12 @@ return [
         /*
          * Application Service Providers...
          */
-        \App\Core\Providers\AppServiceProvider::class,
-        \App\Core\Providers\AuthServiceProvider::class,
+        \App\Providers\AppServiceProvider::class,
+        \App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
-        \App\Core\Providers\EventServiceProvider::class,
-        \App\Core\Providers\RouteServiceProvider::class,
-        \App\Core\Providers\ModulesViewServiceProvider::class,
+        \App\Providers\EventServiceProvider::class,
+        \App\Providers\RouteServiceProvider::class,
+        \App\Providers\ModulesViewServiceProvider::class,
         ModulesMigrationServiceProvider::class
     ])->toArray(),
 
@@ -187,7 +187,5 @@ return [
     'aliases' => Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
-
-
 
 ];
