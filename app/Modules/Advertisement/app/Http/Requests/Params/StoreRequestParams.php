@@ -1,7 +1,7 @@
 <?php
 namespace App\Modules\Advertisement\app\Http\Requests\Params;
 
-use App\Core\Core\Http\Requests\Params\RequestParams;
+use App\Core\Http\Requests\Params\RequestParams;
 
 class StoreRequestParams extends RequestParams
 {

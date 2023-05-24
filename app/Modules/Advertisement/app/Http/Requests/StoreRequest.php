@@ -1,6 +1,6 @@
 <?php
 namespace App\Modules\Advertisement\app\Http\Requests;
-use App\Core\Core\Http\Requests\CoreFormRequest;
+use App\Core\Http\Requests\CoreFormRequest;
 use App\Modules\Advertisement\app\Http\Requests\Params\StoreRequestParams;
 
 class StoreRequest extends CoreFormRequest

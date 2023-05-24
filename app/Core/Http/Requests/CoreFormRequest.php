@@ -2,7 +2,8 @@
 
 namespace App\Core\Http\Requests;
 
-use App\Core\Core\Http\Requests\Params\RequestParams;
+
+use App\Core\Http\Requests\Params\RequestParams;
 use Illuminate\Foundation\Http\FormRequest;
 
 abstract class CoreFormRequest extends FormRequest

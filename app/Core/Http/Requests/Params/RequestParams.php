@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Core\Core\Http\Requests\Params;
+namespace App\Core\Http\Requests\Params;
 
-use App\Core\Core\Http\Requests\CoreFormRequest;
+use App\Core\Http\Requests\CoreFormRequest;
 use Spatie\LaravelData\Data;
 
 abstract class RequestParams extends Data
