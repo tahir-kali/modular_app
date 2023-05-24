@@ -1,5 +1,6 @@
 <?php
 
+use App\Core\Providers\ModulesMigrationServiceProvider;
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
 
@@ -168,7 +169,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         \App\Core\Providers\EventServiceProvider::class,
         \App\Core\Providers\RouteServiceProvider::class,
-        \App\Core\Providers\ModulesViewServiceProvider::class
+        \App\Core\Providers\ModulesViewServiceProvider::class,
+        ModulesMigrationServiceProvider::class
     ])->toArray(),
 
     /*

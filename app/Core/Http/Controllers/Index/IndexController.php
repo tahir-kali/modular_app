@@ -12,6 +12,6 @@ class IndexController extends Controller
     public function index(): Renderable
     {
 
-        return view('index');
+        return view('Index::index');
     }
 }

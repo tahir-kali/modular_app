@@ -2,6 +2,7 @@
 
 namespace App\Core\Providers;
 
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\File;
 class ModulesViewServiceProvider extends ServiceProvider
@@ -16,8 +17,8 @@ class ModulesViewServiceProvider extends ServiceProvider
         if (File::isDirectory($modulesPath)) {
             $moduleDirectories = File::directories($modulesPath);
             foreach ($moduleDirectories as $moduleDirectory) {
-                $filename = basename($moduleDirectory);
-                $this->loadViewsFrom(base_path($moduleDirectory.'/Views'), $filename);
+                $moduleName = basename($moduleDirectory);
+                View::addNameSpace($moduleName,$moduleDirectory.'/Views');
             }
         }
 
