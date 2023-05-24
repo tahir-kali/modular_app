@@ -2,14 +2,19 @@
 
 namespace App\Core\Http\Controllers\Advertisement;
 
+use Illuminate\Console\Application;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Illuminate\Routing\Redirector;
+use Illuminate\Support\Facades\File;
 use Modules\Advertisement\Actions\GetAction;
 use Modules\Advertisement\Actions\GetOneAdvertisementAction;
 use Modules\Advertisement\Actions\StoreAction;
+use Modules\Advertisement\Actions\UpdateAction;
 use Modules\Advertisement\Entities\Advertisement;
 use Modules\Advertisement\Http\Requests\StoreRequest;
+use Modules\Advertisement\Http\Requests\UpdateRequest;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
 class AdvertisementController extends Controller
@@ -27,10 +32,20 @@ class AdvertisementController extends Controller
     public function show(GetAction $action){
         return $action->execute();
     }
-    public function edit(Advertisement $advertisement,GetOneAdvertisementAction $action){
+    public function edit(Advertisement $advertisement,GetOneAdvertisementAction $action)
+    {
 
         $ad = $action->execute($advertisement);
-        return view('edit_advertisement',compact('ad'));
+        return view('edit',compact('ad'));
+    }
+    public function update(Advertisement $advertisement,UpdateRequest $request,UpdateAction $action):JsonResponse|Redirector
+    {
+        $action->execute($advertisement,$request->getParams());
+       if($request->wantsJson()){
+           return response()->json(["msg"=>"Succcess!"]);
+       }
+        return redirect(route('advertisement.index', compact('advertisement')))
+            ->with('success', __('Success'));
     }
 
 }

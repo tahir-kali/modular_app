@@ -12,5 +12,6 @@ Route::group([
 
     Route::post('/store', [AdvertisementController::class,'store']);
     Route::get('/', [AdvertisementController::class,'show']);
+    Route::put('/update', [AdvertisementController::class,'update']);
 
 });

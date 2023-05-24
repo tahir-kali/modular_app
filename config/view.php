@@ -14,9 +14,7 @@ return [
     */
 
     'paths' => [
-        resource_path('views'),
-        base_path('app/Modules/Advertisement/Views'),
-        base_path('app/Modules/Index/Views')
+        resource_path('views')
     ],
 
     /*
