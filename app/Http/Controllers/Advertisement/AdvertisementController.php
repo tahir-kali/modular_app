@@ -1,13 +1,13 @@
 <?php
 
 namespace App\Http\Controllers\Advertisement;
-use App\Modules\Advertisement\app\Actions\GetAction;
-use App\Modules\Advertisement\app\Actions\GetOneAdvertisementAction;
-use App\Modules\Advertisement\app\Actions\StoreAction;
-use App\Modules\Advertisement\app\Actions\UpdateAction;
-use App\Modules\Advertisement\app\Http\Requests\StoreRequest;
-use App\Modules\Advertisement\app\Http\Requests\UpdateRequest;
-use App\Modules\Advertisement\app\Models\Advertisement;
+use Codeholic\Advertisement\Actions\GetAction;
+use Codeholic\Advertisement\Actions\GetOneAdvertisementAction;
+use Codeholic\Advertisement\Actions\StoreAction;
+use Codeholic\Advertisement\Actions\UpdateAction;
+use Codeholic\Advertisement\Http\Requests\StoreRequest;
+use Codeholic\Advertisement\Http\Requests\UpdateRequest;
+use Codeholic\Advertisement\Models\Advertisement;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Routing\Controller;
 use Illuminate\Routing\Redirector;

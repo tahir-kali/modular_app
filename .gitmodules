@@ -1,15 +1,3 @@
-[submodule "Modules/advertisement"]
-	path = Modules/advertisement
-	url = https://github.com/tahir-kali/advertisement.git
-[submodule "Modules/Advertisement"]
-	path = Modules/Advertisement
-	url = https://github.com/tahir-kali/advertisement.git
-[submodule "app/Modules/Index"]
-	path = app/Modules/Index
-	url = https://github.com/tahir-kali/index.git
-[submodule "app/Modules/advertisement"]
-	path = app/Modules/advertisement
-	url = https://github.com/tahir-kali/advertisement.git
-[submodule "app/Modules/Advertisement"]
-	path = app/Modules/Advertisement
-	url = https://github.com/tahir-kali/advertisement.git
+[submodule "app/Modules/Advertisement_Package"]
+	path = app/Modules/Advertisement_Package
+	url = https://github.com/tahir-kali/advertisement_package.git

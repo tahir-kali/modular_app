@@ -10,6 +10,5 @@
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-include_once __DIR__ . '/web/index/index.php';
 
 include_once __DIR__ . '/web/advertisement/index.php';
