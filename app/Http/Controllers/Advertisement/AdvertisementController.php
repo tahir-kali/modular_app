@@ -1,17 +1,16 @@
 <?php
 
 namespace App\Http\Controllers\Advertisement;
-
-use App\Modules\Advertisement\app\Models\Advertisement;
-use Illuminate\Contracts\Support\Renderable;
-use Illuminate\Routing\Controller;
-use Illuminate\Routing\Redirector;
 use App\Modules\Advertisement\app\Actions\GetAction;
 use App\Modules\Advertisement\app\Actions\GetOneAdvertisementAction;
 use App\Modules\Advertisement\app\Actions\StoreAction;
 use App\Modules\Advertisement\app\Actions\UpdateAction;
 use App\Modules\Advertisement\app\Http\Requests\StoreRequest;
 use App\Modules\Advertisement\app\Http\Requests\UpdateRequest;
+use App\Modules\Advertisement\app\Models\Advertisement;
+use Illuminate\Contracts\Support\Renderable;
+use Illuminate\Routing\Controller;
+use Illuminate\Routing\Redirector;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
 class AdvertisementController extends Controller
