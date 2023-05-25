@@ -18,7 +18,7 @@ class AdvertisementController extends Controller
     public function index(GetAction $action): Renderable
     {
         $ads = $action->execute();
-        return view('Advertisement::advertisement',compact('ads'));
+        return view('Advertisement_Package::list',compact('ads'));
     }
     public function store(StoreRequest $request, StoreAction $action): JsonResponse
     {
@@ -32,7 +32,7 @@ class AdvertisementController extends Controller
     {
 
         $ad = $action->execute($advertisement);
-        return view('Advertisement::edit',compact('ad'));
+        return view('Advertisement_Package::edit',compact('ad'));
     }
     public function update(Advertisement $advertisement,UpdateRequest $request,UpdateAction $action):JsonResponse|Redirector
     {

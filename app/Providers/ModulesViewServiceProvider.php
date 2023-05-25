@@ -18,7 +18,7 @@ class ModulesViewServiceProvider extends ServiceProvider
             $moduleDirectories = File::directories($modulesPath);
             foreach ($moduleDirectories as $moduleDirectory) {
                 $moduleName = basename($moduleDirectory);
-                View::addNameSpace($moduleName,$moduleDirectory.'/resources/views');
+                View::addNameSpace($moduleName,$moduleDirectory.'/src/Views');
             }
         }
 
