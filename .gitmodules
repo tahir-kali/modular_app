@@ -4,3 +4,6 @@
 [submodule "Codeholic/Advertisement_Package"]
 	path = Codeholic/Advertisement_Package
 	url = https://github.com/tahir-kali/advertisement_package.git
+[submodule "app/Modules/File_Package"]
+	path = app/Modules/File_Package
+	url = https://github.com/tahir-kali/file_module.git
